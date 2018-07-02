@@ -1,0 +1,13 @@
+{
+    "name": "dice-roller-bot",
+    "version": "1.0.0",
+    "description": "A basic DnD dice roller bot.",
+    "main": "math.js",
+    "author": "Andrew Kulpa",
+    "dependencies": {
+        "discord.io": "github:woor/discord.io#gateway_v6",
+        "fluent-ffmpeg": "^2.1.2",
+        "mathjs": "^5.0.1",
+        "winston": "^3.0.0"
+    }
+}
