@@ -5,11 +5,10 @@ var fs = require('fs');
 console.log("Initializing Discord Bot");
 // Initialize Discord Bot
 var bot = new Discord.Client({
-   token: auth.token,
-   autorun: true
+    token: auth.token,
+    autorun: true
 });
-// bot.connect();
-// console.log(bot.username );
+
 bot.on('ready', function () {
     console.log('Connected');
     console.log('Logged in as: ');
@@ -17,14 +16,13 @@ bot.on('ready', function () {
 });
 
 bot.on('message', function (user, userID, channelID, message, event) {
-    try{
+    try {
         if (message.substring(0, 1) == '!') {
             var args = message.substring(1).split(' ');
             var cmd = args[0];
-        
+
             args = args.splice(1);
-            switch(cmd.toLowerCase()) {
-                // !ping
+            switch (cmd.toLowerCase()) {
                 case 'roll':
                     bot.sendMessage({
                         to: channelID,
@@ -42,7 +40,7 @@ bot.on('message', function (user, userID, channelID, message, event) {
                     console.log("Unknown argument: " + cmd);
             }
         }
-    } catch(err) {
+    } catch (err) {
         console.log("Error caught:");
         console.log(err.message);
         console.log("\n\n");
