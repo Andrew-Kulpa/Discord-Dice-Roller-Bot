@@ -13,8 +13,9 @@ module.exports = {
                     return node;
                 }
             });
-            var message = transformed.toString();
-            var message = message + "\n" + math.eval(transformed.toString());
+            var message = "Rolling `" + roll_string + "`"
+            var message = message + "\n`" + transformed.toString() + "`";
+            var message = message + "\nTotal: " + "`" + math.eval(transformed.toString())+ "`";
         } catch {
             var message = "Error with roll argument string '" + roll_string + "'.";
         }
@@ -24,7 +25,7 @@ module.exports = {
 function rollInfo(node) {
     var lhs = null;
     var rhs = null;
-    var regex = /[dw]\d+/;
+    var regex = /[dw]\d+/; // e.g. d8
     node.traverse(function (node, path, parent) {
         switch (node.type) {
             case 'ConstantNode':
@@ -36,7 +37,7 @@ function rollInfo(node) {
                 break;
         }
     })
-    return [lhs, rhs, op];
+    return [lhs, rhs, op]; // e.g. [2, 8, d]
 };
 function random(min, max) {
     return Math.floor(Math.random() * max) + min;
