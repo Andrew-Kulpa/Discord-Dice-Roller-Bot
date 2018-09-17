@@ -32,7 +32,7 @@ node bot.js &
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Andrew-Kulpa/Discord-Dice-Roller-Bot/blob/master/Contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -42,7 +42,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 * **Andrew Kulpa** - *Initial work* - [Andrew-Kulpa](https://github.com/Andrew-Kulpa)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Andrew-Kulpa/Discord-Dice-Roller-Bot/contributors) who participated in this project.
 
 ## License
 
