@@ -13,13 +13,21 @@ This bot requires the use of NPM to install and run, as it has various dependenc
 ## Deployment
 
 ```
-git clone <repo>
-sudo apt install npm
-npm install package.json
-cp auth.json.example auth.json
-vi auth.json
-<insert your generated bot token>
-node bot.js &
+$ git clone <repo>
+$ sudo apt install npm
+$ npm install package.json
+$ cp auth.json.example auth.json
+$ vi auth.json
+$ <insert your generated bot token>
+$ node bot.js &
+```
+
+If you would like it to persist after closing your terminal session:
+```
+$ tmux
+$ node bot.js
+Press 'CTRL-B'
+Press 'd'
 ```
 
 ## Built With
