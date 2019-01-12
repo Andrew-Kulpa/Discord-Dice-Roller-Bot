@@ -46,3 +46,4 @@ bot.on('message', function (user, userID, channelID, message, event) {
         console.log("\n\n");
     }
 });
+console.log("loaded");
